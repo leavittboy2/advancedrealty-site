@@ -17,23 +17,31 @@
 /wp-*.php
 /xmlrpc.php
 
-# Configuration
-wp-config.php
+# --- WORDPRESS WP-CONTENT IGNORE ---
 
-# Example themes
-/wp-content/themes/twenty*/
+# Ignore the heavy stuff (This fixes your 20,000 file issue)
+/uploads/
+/upgrade/
+/cache/
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Ignore Core files if they were downloaded
+index.php
+languages/
 
-# Uploads
-/wp-content/uploads/
+# Ignore Default/Example Themes (Keeps the AI focused on your real theme)
+/themes/twenty*/
+/plugins/hello.php
 
-# Log files
+# Ignore System & Log files
 *.log
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# htaccess
-/.htaccess
+# Ignore sensitive info
+wp-config.php
+.htaccess
 
 # All plugins
 #
