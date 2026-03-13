@@ -43,6 +43,38 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# --- AGGRESSIVE WP-CONTENT IGNORE ---
+
+# The big hitters
+/uploads/
+/upgrade/
+/cache/
+/litespeed/
+
+# Ignore heavy library folders (The AI doesn't need these)
+**/node_modules/
+**/bower_components/
+**/vendor/
+
+# Ignore Language files (Usually thousands of .po/.mo files)
+/languages/
+**/languages/
+
+# Ignore specific media/asset types
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.pdf
+*.zip
+*.mp4
+*.svg
+
+# Ignore System junk
+.DS_Store
+Thumbs.db
+*.log
+
 # Ignore sensitive info
 wp-config.php
 .htaccess
