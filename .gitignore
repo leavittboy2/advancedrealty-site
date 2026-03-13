@@ -1,92 +1,20 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# 1. Ignore EVERYTHING in the wp-content folder
+/*
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# 2. Allow the .gitignore file itself
+!.gitignore
 
-# --- WORDPRESS WP-CONTENT IGNORE ---
+# 3. UN-IGNORE your specific themes
+!/themes/advanced-realty-hoa/
+!/themes/advanced-realty-KL/
 
-# Ignore the heavy stuff (This fixes your 20,000 file issue)
-/uploads/
-/upgrade/
-/cache/
+# 4. UN-IGNORE your specific plugin
+!/plugins/[NAME-OF-PLUGIN]/
 
-# Ignore Core files if they were downloaded
-index.php
-languages/
-
-# LiteSpeed Cache
-/litespeed/
-*.bkp
-
-# Ignore Default/Example Themes (Keeps the AI focused on your real theme)
-/themes/twenty*/
-/plugins/hello.php
-
-# Ignore System & Log files
-*.log
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# --- AGGRESSIVE WP-CONTENT IGNORE ---
-
-# The big hitters
-/uploads/
-/upgrade/
-/cache/
-/litespeed/
-
-# Ignore heavy library folders (The AI doesn't need these)
+# 5. Still ignore the heavy stuff inside those folders (just in case)
 **/node_modules/
-**/bower_components/
-**/vendor/
-
-# Ignore Language files (Usually thousands of .po/.mo files)
-/languages/
 **/languages/
-
-# Ignore specific media/asset types
+**/cache/
 *.jpg
-*.jpeg
 *.png
-*.gif
-*.pdf
 *.zip
-*.mp4
-*.svg
-
-# Ignore System junk
-.DS_Store
-Thumbs.db
-*.log
-
-# Ignore sensitive info
-wp-config.php
-.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
