@@ -4,14 +4,20 @@
 # 2. Allow the .gitignore file itself
 !.gitignore
 
-# 3. UN-IGNORE your specific themes
+# 3. Allow Git to enter the folders (Crucial Step)
+!/themes/
+!/plugins/
+
+# 4. Re-ignore everything inside them by default
+/themes/*
+/plugins/*
+
+# 5. UN-IGNORE your specific folders
 !/themes/advanced-realty-hoa/
 !/themes/advanced-realty-KL/
-
-# 4. UN-IGNORE your specific plugin
 !/plugins/rm-unit-availability-plugin-main/
 
-# 5. Still ignore the heavy stuff inside those folders (just in case)
+# 6. Still ignore the heavy stuff inside those folders
 **/node_modules/
 **/languages/
 **/cache/
