@@ -28,6 +28,10 @@
 index.php
 languages/
 
+# LiteSpeed Cache
+/litespeed/
+*.bkp
+
 # Ignore Default/Example Themes (Keeps the AI focused on your real theme)
 /themes/twenty*/
 /plugins/hello.php
