@@ -9,7 +9,7 @@
 !/themes/advanced-realty-KL/
 
 # 4. UN-IGNORE your specific plugin
-!/plugins/[NAME-OF-PLUGIN]/
+!/plugins/rm-unit-availability-plugin-main/
 
 # 5. Still ignore the heavy stuff inside those folders (just in case)
 **/node_modules/
