@@ -1,0 +1,455 @@
+/* Scss Document */
+/* Reset */
+/* general template styles that will change */
+.rmwb_no-properties {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.rmwb_detail-wrapper *, .rmwb_listing-wrapper * {
+  box-sizing: border-box;
+}
+
+.rmwb_main-header h3 {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.rmwb_detail-wrapper h2, .rmwb_listing-wrapper h2 {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 400;
+}
+
+.rmwb_detail-wrapper h3 {
+  width: 100%;
+  font-weight: 400;
+}
+
+.rmwb_detail-wrapper ul, .rmwb_listing-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* end reset */
+img {
+  max-width: 100%;
+}
+
+.page-title.rmwb_page-title {
+  min-height: 0;
+}
+
+.rmwb_detail-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  align-items: stretch;
+}
+.rmwb_detail-wrapper .rmwb_section {
+  flex-basis: 47%;
+  min-width: 400px;
+  padding: 1em;
+  flex: 1 1;
+}
+.rmwb_detail-wrapper .rmwb_section h3 {
+  margin-bottom: auto;
+}
+.rmwb_detail-wrapper .rmwb_section.rmwb_header-section {
+  width: 100%;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rmwb_detail-wrapper .rmwb_section.rmwb_header-section .rmwb_callout-links a {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin: 0.2em;
+  border: none;
+}
+.rmwb_detail-wrapper .rmwb_section.rmwb_google-map-detail {
+  flex-basis: 100%;
+}
+.rmwb_detail-wrapper .rmwb_additional-photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rmwb_detail-wrapper .rmwb_additional-photos .rmwb_additional-photo {
+  width: 24%;
+}
+.rmwb_detail-wrapper .rmwb_additional-photos .rmwb_additional-photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  object-position: center;
+}
+.rmwb_detail-wrapper .rmwb_description {
+  flex-basis: 100%;
+  width: 100%;
+  padding: 0 1em;
+}
+.rmwb_detail-wrapper .rmwb_amenities-section {
+  margin-bottom: auto;
+}
+.rmwb_detail-wrapper .rmwb_amenities-section li {
+  margin-left: 20px;
+}
+.rmwb_detail-wrapper .rmwb_amenities-section li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: stretch;
+  margin: 0.25em 0;
+  padding: 0.5em 0.2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.rmwb_detail-wrapper .rmwb_amenities-section li:last-child {
+  border-bottom: none;
+}
+.rmwb_detail-wrapper .rmwb_additional-info-section {
+  margin-bottom: auto;
+}
+.rmwb_detail-wrapper .rmwb_additional-info-section li {
+  margin-left: 20px;
+}
+
+.rmwb_section .rmwb_main-photo a {
+  border: none;
+}
+.rmwb_section .rmwb_main-photo img {
+  width: 100%;
+}
+
+.rmwb_info-title {
+  text-transform: uppercase;
+}
+
+.rmwb_important-info-section .rmwb_info-list li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbb;
+  box-sizing: border-box;
+}
+.rmwb_important-info-section .rmwb_info-list li:last-child {
+  border-bottom: none;
+}
+.rmwb_important-info-section .rmwb_info-list li .rmwb_info-title {
+  box-sizing: border-box;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+.rmwb_important-info-section .rmwb_info-list li .rmwb_info-detail {
+  padding: 0.5em;
+  margin: 0 0.2em;
+}
+.rmwb_important-info-section .rmwb_info-secondary-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.rmwb_important-info-section .rmwb_info-secondary-list li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33% - 1em);
+}
+.rmwb_important-info-section .rmwb_info-secondary-list li .rmwb_info-title {
+  padding: 0.5em;
+}
+.rmwb_important-info-section .rmwb_info-secondary-list li .rmwb_info-detail {
+  padding: 0.5em;
+  margin: 0 0.2em;
+}
+
+.rmwb_video-tour {
+  padding: 1em;
+}
+
+.rmwb_video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* padding-top: 25px; */
+  height: 0;
+}
+.rmwb_video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rmwb_specials {
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.rmwb_row {
+  padding: 5vh 50px;
+}
+@media screen and (min-width: 1700px) {
+  .rmwb_row {
+    padding: 5vh 100px;
+  }
+}
+
+.rmwb_listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.rmwb_listing-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em;
+  align-items: stretch;
+  width: calc(100% - 4em);
+  /* border: 0.1em solid;
+  box-sizing: border-box;
+  border-color: #bbb; */
+  background-color: #fff;
+  max-width: 600px;
+}
+
+  .rmwb_listing-wrapper:hover { box-shadow: 0px 11px 18px 2px #00a69954;
+
+}
+@media screen and (min-width: 1200px) {
+  .rmwb_listing-wrapper {
+    width: calc(50% - 4.2em);
+  }
+}
+@media screen and (min-width: 1700px) {
+  .rmwb_listing-wrapper {
+    width: calc(33.33% - 4.2em);
+  }
+}
+.rmwb_listing-wrapper .rmwb_section {
+  padding: 1em;
+  flex-grow: 1;
+}
+.rmwb_listing-wrapper .rmwb_photo-section {
+  flex-basis: calc(50% - 2em);
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.rmwb_listing-wrapper .rmwb_photo-section .rmwb_main-photo {
+  width: 100%;
+}
+.rmwb_listing-wrapper .rmwb_photo-section .rmwb_main-photo a {
+  border: none;
+}
+.rmwb_listing-wrapper .rmwb_important-info-section {
+  flex-basis: calc(50% - 2em);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.rmwb_listing-wrapper .rmwb_important-info-section .rmwb_info-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.rmwb_listing-wrapper .rmwb_important-info-section .rmwb_info-list li {
+  flex-direction: column;
+}
+.rmwb_listing-wrapper .rmwb_important-info-section .rmwb_info-list li span {
+  padding: 0.5em;
+  flex-grow: 1;
+}
+.rmwb_listing-wrapper .rmwb_description {
+  padding: 0 20px;
+  width: 100%;
+}
+.rmwb_listing-wrapper .rmwb_header-section {
+  flex-basis: 100%;
+  padding: 0;
+}
+.rmwb_listing-wrapper .rmwb_header-section h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px 5px;
+}
+.rmwb_listing-wrapper .more-details {
+  /* Button styles from the main CSS document - have a general scss file that this can also import, with these type of styles */
+  /*text-decoration:none;
+  background-color: #eee; 
+  padding: .5em 1em;
+  color:black;
+  display:inline-block;
+  &:hover{
+      background-color: #ddd;
+  }*/
+}
+.rmwb_listing-wrapper .more-details:first-child {
+  margin: auto 0 0 auto;
+}
+.rmwb_listing-wrapper .rmwb_detail-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  box-sizing: border-box;
+  align-items: flex-end;
+}
+.rmwb_listing-wrapper .rmwb_detail-button-wrapper a {
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.rmwb_logo {
+  height: 120px;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+}
+.rmwb_logo img {
+  height: 100%;
+  width: auto;
+}
+
+.rmwb_contact-section {
+  flex-basis: 100%;
+}
+.rmwb_contact-section h3 {
+  padding: 0.5em 0;
+}
+
+.rmwb_option-2 .rmwb_detail-wrapper .rmwb_photo-section.rmwb_primary-photos {
+  flex-basis: calc(50% - 2em);
+}
+.rmwb_option-2 .rmwb_detail-wrapper .rmwb_important-info-section {
+  flex-basis: calc(50% - 2em);
+}
+.rmwb_option-2 .rmwb_info-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.rmwb_option-2 .rmwb_info-list li {
+  flex-direction: column;
+  border-bottom: none;
+}
+.rmwb_option-2 .rmwb_info-list li span {
+  padding: 0.5em;
+}
+.rmwb_unit-listings-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rmwb_unit-listings-wrapper h3 {
+  width: 100%;
+}
+
+.rmwb_paging {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em;
+  width: 100%;
+}
+
+.rmwb_loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.rmwb_view_more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1em;
+}
+.rmwb_view_more .view_more {
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .rmwb_detail-wrapper .rmwb_section, .rmwb_option-2 .rmwb_detail-wrapper .rmwb_section, .rmwb_option-2 .rmwb_detail-wrapper .rmwb_amenities-section {
+    min-width: 0;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .rmwb_detail-wrapper .rmwb_important-info-section .rmwb_info-list li .rmwb_info-title {
+    min-width: 47%;
+  }
+  .rmwb_detail-wrapper .rmwb_section.rmwb_header-section {
+    display: block;
+    text-align: center;
+  }
+  .rmwb_detail-wrapper .rmwb_additional-photos .rmwb_additional-photo {
+    height: 75px;
+  }
+  .rmwb_listing-wrapper .rmwb_photo-section {
+    flex-basis: 100%;
+  }
+  .rmwb_listing-wrapper .rmwb_photo-section .rmwb_main-photo {
+    width: 100%;
+  }
+  .rmwb_listing-wrapper .rmwb_important-info-section {
+    flex-basis: 100%;
+  }
+  .rmwb_logo {
+    text-align: center;
+  }
+  .rmwb_important-info-section .rmwb_info-list {
+    justify-content: center;
+  }
+  .rmwb_important-info-section .rmwb_info-list li {
+    flex-basis: 100%;
+  }
+  .rmwb_important-info-section .rmwb_info-secondary-list li {
+    flex-basis: calc(50% - 1em);
+  }
+}
+@media (max-width: 600px) {
+  .rmwb_important-info-section .rmwb_info-secondary-list li {
+    flex-basis: 100%;
+  }
+}
+.rmwb_listings-wrapper {
+  text-align: center;
+}
+.rmwb_listings-wrapper h2 {
+  padding: 1rem;
+}
+
+.rmwb_listing_header {
+  text-align: center;
+}
+
+/*# sourceMappingURL=listing.css.map */
+
+.rmwb_banner {
+  background-color: rgb(251, 190, 8);
+  padding: 5px;
+  margin: 1em 0 1em 1em;
+  color: #000000;
+}

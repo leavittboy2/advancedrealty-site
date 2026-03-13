@@ -1,0 +1,28 @@
+/*
+Theme Name: Advanced Realty HOA Template
+Theme URI: https://advancedrealty.com
+Author: Advanced Realty
+Description: Standardized layout for properties managed by Advanced Realty. Includes customizer support for HOA specific details.
+Version: 1.1
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7fbfd;
+    color: #1f2937;
+}
+
+/* Custom Brand Color (Teal from Advanced Realty Logo) */
+.text-adv-teal { color: #00A699; } 
+.bg-adv-teal { background-color: #00A699; }
+.border-adv-teal { border-color: #00A699; }
+.hover\:bg-adv-teal-dark:hover { background-color: #008f83; }
+
+/* HOA Primary Accent Color: Royal Blue */
+.text-hoa-blue { color: #1D4ED8; } 
+.bg-hoa-blue { background-color: #1D4ED8; } 
+.hover\:bg-hoa-blue-dark:hover { background-color: #1E40AF; } 
+
+/* HOA Secondary Accent Color: Amber/Orange */
+.bg-hoa-amber { background-color: #F59E0B; } 
+.text-hoa-amber { color: #F59E0B; }

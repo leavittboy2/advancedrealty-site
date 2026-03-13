@@ -1,0 +1,103 @@
+/*
+/*
+Theme Name:   Advanced Realty 2026
+Theme URI:    https://advancedrealty.com
+Description:  Custom child theme for 2026 redesign.
+Author:       Advanced Realty
+Author URI:   https://advancedrealty.com
+ Template:     twentytwentyfive
+ Version:      1.0.0
+*/
+
+/* GLOBAL STYLES */
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f7fbfd; 
+    color: #1f2937; 
+}
+
+/* Brand Colors */
+.text-adv-teal { color: #00A699; } 
+.bg-adv-teal { background-color: #00A699; }
+.border-adv-teal { border-color: #00A699; }
+.hover\:bg-adv-teal-dark:hover { background-color: #008f83; }
+
+/* Navigation Dropdowns */
+.dropdown-menu { 
+    transition: opacity 0.2s ease, transform 0.2s ease; 
+}
+.group:hover .dropdown-menu { 
+    opacity: 1; 
+    visibility: visible; 
+    transform: translateY(0); 
+}
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-top-width: 8px;
+    border-color: #00A699;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 166, 153, 0.3);
+}
+
+/* FIX: Target the "Visit StGeorgeStorage.com" link and arrow */
+.bg-adv-teal.service-card:hover .font-semibold {
+    color: #000000 !important;
+}
+
+/* Legal Content / Policy Styling */
+.policy-content h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+.policy-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00A699;
+}
+.policy-content p, .policy-content ul, .policy-content ol {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+    color: #4b5563;
+}
+.policy-content ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+/* Carousel / IDX Custom classes */
+.agent-carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.agent-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.agent-card {
+    scroll-snap-align: center;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+}
+.agent-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Plugin Overrides for Rent Manager Shortcode */
+.rmwb_listings-wrapper {
+    width: 100%;
+}
