@@ -59,8 +59,8 @@ get_header();
             </a>
 
             <!-- Pillar 2: Available Rentals (Row 1, Item 2) -->
-            <!-- Updated Temporary Link -->
-            <a href="https://old.advancedrealty.com/rental-listings/" class="service-card p-6 sm:p-8 block">
+            <!-- Updated Link -->
+            <a href="https://advancedrealty.com/rental-listings/" class="service-card p-6 sm:p-8 block">
                 <div class="text-6xl text-adv-teal mb-4">
                     <i data-lucide="home" class="w-12 h-12"></i>
                 </div>
