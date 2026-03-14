@@ -34,8 +34,8 @@
                     <div class="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden">
                         <a href="<?php echo home_url('/real-estate'); ?>" class="block px-5 py-3 text-gray-800 hover:bg-gray-50 hover:text-adv-teal transition-colors text-sm font-medium border-b border-gray-50">Real Estate (Buy/Sell)</a>
                         
-                        <!-- Updated Temporary Link -->
-                        <a href="https://old.advancedrealty.com/rental-listings/" class="block px-5 py-3 text-gray-800 hover:bg-gray-50 hover:text-adv-teal transition-colors text-sm font-medium border-b border-gray-50">Available Rentals</a>
+                        <!-- Updated Link -->
+                        <a href="https://advancedrealty.com/rental-listings/" class="block px-5 py-3 text-gray-800 hover:bg-gray-50 hover:text-adv-teal transition-colors text-sm font-medium border-b border-gray-50">Available Rentals</a>
                         
                         <a href="<?php echo home_url('/residential-management'); ?>" class="block px-5 py-3 text-gray-800 hover:bg-gray-50 hover:text-adv-teal transition-colors text-sm font-medium border-b border-gray-50">Residential Management</a>
                         <a href="<?php echo home_url('/hoa-management'); ?>" class="block px-5 py-3 text-gray-800 hover:bg-gray-50 hover:text-adv-teal transition-colors text-sm font-medium border-b border-gray-50">HOA Management</a>
